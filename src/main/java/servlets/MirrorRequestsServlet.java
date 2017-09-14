@@ -19,10 +19,10 @@ public class MirrorRequestsServlet extends HttpServlet {
     public void doGet(HttpServletRequest request,
                       HttpServletResponse response) throws ServletException, IOException {
 
-        Map<String, Object> pageVariables = new HashMap<>();
-        pageVariables.put("value", request.getParameter("key"));
+        //Map<String, Object> pageVariables = new HashMap<>();
+       // pageVariables.put("value", request.getParameter("key"));
 
-        response.getWriter().println(PageGenerator.instance().getPage("page_1_1.html", pageVariables));
+        response.getWriter().println(request.getParameter("key"));
 
         response.setContentType("text/html;charset=utf-8");
         response.setStatus(HttpServletResponse.SC_OK);
