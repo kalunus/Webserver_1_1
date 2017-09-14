@@ -23,5 +23,6 @@ public class Main {
 
         server.start();
         server.join();
+        System.out.println("Server started");
     }
 }

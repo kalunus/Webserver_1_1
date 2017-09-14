@@ -1,0 +1,1 @@
+C:\Users\SBT-Boyko-AP\Downloads\apache-maven-3.5.0\bin\mvn.cmd compile assembly:single
